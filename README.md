@@ -1,45 +1,46 @@
-# 02-rest-api-mysql - Spring Boot REST API on AWS Elastic Beanstalk
+# 02-rest-api-mysql - Spring Boot REST API on AWS
 
 ## 🎯 Project Overview
-Successfully deployed Spring Boot REST API with MySQL database on AWS Elastic Beanstalk.
-Environment launched and verified with health status OK.
+End-to-end deployment of Spring Boot REST API with MySQL database.
+Deployed on AWS Elastic Beanstalk with RDS MySQL as backend.
 
-## 📸 Deployment Proof
+## 📸 Deployment Proof - Complete AWS Pipeline
 
-### 1. Build Success
+### 1. Build Success - Maven
 ![Build Success](DEPLOYMENT%20SUCCESS!%20Environment%20is%20LIVE.png)
-*Maven Build: SUCCESS | JUnit Tests: All Passed | Build time: 7.371s*
+*Maven Build: SUCCESS | JUnit Tests: 1 Passed, 0 Failed*
 
-### 2. Application Live Status
+### 2. Application Live - Elastic Beanstalk
 ![App Live](EB_App_Live.png)
-*Spring Boot API running successfully on AWS Elastic Beanstalk*
-*Environment: Restapi-prod-env | Health: OK | Platform: Corretto 17*
+*Spring Boot API running | Platform: Corretto 17 on Amazon Linux 2023*
 
-## 📖 Detailed Documentation
-For complete deployment steps and AWS configuration → [View Full Documentation](02-rest-api-mysql-Deployment.md)
+### 3. Database Created - AWS RDS MySQL
+![RDS Database](AWS_RDS_Social_Media.png)
+*DB Identifier: social-media-db | Status: Available | Engine: MySQL Community*
+*Instance Class: db.t4g.micro | Region: ap-south-1 Mumbai*
 
-## 🔧 Tech Stack
-- **Backend**: Java 17, Spring Boot
-- **Database**: MySQL 
+## 📖 Detailed Deployment Steps
+For complete AWS setup, configuration, and steps → [View Documentation](02-rest-api-mysql-Deployment.md)
+
+## 🔧 Tech Stack & AWS Services
+- **Backend**: Java 17, Spring Boot 3.x
+- **Database**: MySQL via AWS RDS 
 - **Cloud**: AWS Elastic Beanstalk, EC2
-- **Build**: Maven
+- **Build Tool**: Maven
 - **Testing**: JUnit
 
-## 📝 What I Demonstrated
-1. End-to-end AWS Elastic Beanstalk deployment
-2. Spring Boot JAR build and deployment
-3. Environment health monitoring - Status: OK
-4. Production-ready cloud deployment
-5. Successfully launched environment: Restapi-prod-env
+## 📝 What I Achieved
+1. Created AWS RDS MySQL instance `social-media-db` - Status: Available
+2. Built Spring Boot JAR and deployed on Elastic Beanstalk
+3. Verified environment health: OK
+4. End-to-end cloud deployment from code to database
 
 ## 💡 Note
-AWS environment was deleted post-verification to manage cloud costs. 
-Screenshots serve as deployment proof.
+AWS resources deleted post-verification to manage costs. Screenshots serve as deployment proof.
 
-## 👨‍💻 Author
-**Your Name**  
-Returning to tech after 10yr career gap | AWS + Spring Boot  
-LinkedIn: [Your LinkedIn URL]
+## 👨‍💻 About Me
+Returning to tech after 10yr career gap | AWS + Spring Boot Projects  
+LinkedIn: [Add your LinkedIn]
 
 ---
-*Cloud deployment project for portfolio*
+*Production-ready cloud deployment project for portfolio*
